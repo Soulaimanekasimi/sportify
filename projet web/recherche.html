@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sportify - Accueil</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div align="center" class="logo">
+            <h1 class="titre" align="center">Sportify :Consultation sportive</h1><br>
+            
+            <img  src="logoece.jpg" alt="Sportify :Consultation sportive" class="logopetit">
+
+        </div>
+      
+    </header>
+
+    <main>
+        <!-- Ajoutez les autres sections ici -->
+
+        <section id="Recherche">
+            <h2>Recherche</h2>
+            <form id="form-recherche">
+                <label for="query">Recherche :</label>
+                <input type="text" id="query" name="query" placeholder="Entrez votre recherche">
+                <button type="button" onclick="effectuerRecherche()">Rechercher</button>
+            </form>
+            
+            <!-- Affichez ici les résultats de la recherche -->
+            <div id="resultats-recherche">
+                <!-- Les résultats seront affichés ici dynamiquement -->
+            </div>
+        </section>
+    </main>
+    <nav>
+        
+                <a href="sportify.html" class="active" id="Accueil">Retour au page principal</a>
+                
+            
+        </nav>
+
+     <footer>
+        <div class="contact">
+            <h3>Contactez-nous</h3>
+            <p>Vous avez des questions, des suggestions ou des réclamations ? N'hésitez pas à nous contacter par mail, par téléphone ou par courrier. Nous vous répondrons dans les meilleurs délais.</p>
+            <ul>
+                <li><a href="mailto:sportify@omnes.edu">sportify@omnes.edu</a></li>
+                <li><a href="tel:+33123456789">01 23 45 67 89</a></li>
+                <li>12 rue du Sport, 75015 Paris</li>
+            </ul>
+        </div>
+        <div class="map">
+            <h3>Trouvez-nous</h3>
+            
+    </footer>
+
+    <!-- Ajoutez le script JavaScript pour gérer la recherche -->
+    <script>
+        function effectuerRecherche() {
+            // Récupérer la valeur de la recherche
+            var query = document.getElementById('query').value;
+
+            // Ajouter la logique de recherche ici
+            // Vous pouvez envoyer une requête au serveur pour obtenir les résultats
+            // et mettre à jour dynamiquement la section des résultats
+
+            // Exemple d'affichage de résultats (à remplacer avec la logique de recherche réelle)
+            var resultatsRecherche = document.getElementById('resultats-recherche');
+            resultatsRecherche.innerHTML = "<p>Résultats de la recherche pour : " + query + "</p>";
+
+            // Vous pouvez ajouter ici la logique pour afficher les résultats pertinents
+        }
+    </script>
+</body>
+</html>

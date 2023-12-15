@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sportify - Activités Sportives</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    
+
+    <main>
+        <section id="activites-sportives">
+            <h2>Activités Sportives</h2>
+            <!-- Sample activity -->
+            <div class="activity" id="Rugby">
+                <h3>Rugby</h3>
+                <!-- Coach details -->
+                <div class="coach-details">
+                    <img src="rugby.jpg" alt="Coach Abdeslam Geza">
+                    <p>Nom du coach: Abdeslam Geza</p>
+                    <p>Coordonnées: Bureau XYZ, Tél: 123-456-789, Email: abdeslam.geza@sportify.com</p>
+                    <!-- Coach availability as a table -->
+                    <table align="center" class="availability-table">
+                        <tr>
+                            <th>Jour</th>
+                            <th>Disponibilité</th>
+                        </tr>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>Matin</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>Absent</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>Toute la journée</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>Absent</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>Matin, Après-midi</td>
+                        </tr>
+                        <tr>
+                            <td>Samedi</td>
+                            <td>Absent</td>
+                        </tr>
+                        <tr>
+                            <td>Dimanche</td>
+                            <td>Toute la journée</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Communication options -->
+                <div class="communication-options">
+                    <button onclick="scheduleAppointment('Abdeslam Geza')">Prendre un RDV</button>
+                    <button onclick="makeAudioCall('Abdeslam Geza')">Communiquer avec le coach</button>
+                    <button onclick="makeVideoCall('Abdeslam Geza')">Voir son CV</button>
+                </div>
+                
+            </div>
+            <!-- More activities can be added similarly -->
+        </section>
+    </main>
+     <nav>
+        
+                <a href="sportify.html" class="active" id="Accueil">Retour au page principal</a>
+                
+            
+        </nav>
+
+     <footer>
+        <div class="contact">
+            <h3>Contactez-nous</h3>
+            <p>Vous avez des questions, des suggestions ou des réclamations ? N'hésitez pas à nous contacter par mail, par téléphone ou par courrier. Nous vous répondrons dans les meilleurs délais.</p>
+            <ul>
+                <li><a href="mailto:sportify@omnes.edu">sportify@omnes.edu</a></li>
+                <li><a href="tel:+33123456789">01 23 45 67 89</a></li>
+                <li>12 rue du Sport, 75015 Paris</li>
+            </ul>
+        </div>
+        <div class="map">
+            <h3>Trouvez-nous</h3>
+            
+    </footer>
+
+    
+<script>
+    function scheduleAppointment(coachName) {
+        // Replace this sample data with your actual coach availability
+        var coachAvailability = {
+            'Lundi': ['Matin'],
+            'Mardi': ['Absent'],
+            'Mercredi': ['Toute la journée'],
+            'Jeudi': ['Absent'],
+            'Vendredi': ['Matin', 'Après-midi'],
+            'Samedi': ['Absent'],
+            'Dimanche': ['Toute la journée']
+        };
+
+        // Prompt the user to select a day and time
+        var selectedDay = prompt('Choisissez un jour (Lundi, Mardi, ..., Dimanche):');
+        var selectedTime = prompt('Choisissez un créneau horaire (' + coachAvailability[selectedDay].join(', ') + '):');
+
+        // Check if the selected day and time are available
+        if (selectedDay && selectedTime && coachAvailability[selectedDay].includes(selectedTime)) {
+            // Replace this alert with your actual appointment scheduling logic
+            alert('RDV confirmé avec ' + coachName + ' le ' + selectedDay + ' à ' + selectedTime);
+        } else {
+            alert('Créneau non disponible. Veuillez choisir un créneau valide.');
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,3 +1,15 @@
+.logogrand{
+    width: 300px;
+    height: auto;
+}
+.logopetit {
+    
+    position: absolute;
+    top: 0; 
+    left: 0; 
+}
+
+
 nav a {
     display: inline-block;
     padding: 10px 20px;
@@ -17,12 +29,16 @@ nav a:hover {
 /* Add this CSS to your css.css file or include it in your HTML file */
 
 body {
+    background: url(test.jpg) ;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
+    height: 350px;
+    background: url(test.jpg) ;
+    background-position: center;
     background-color: #3498db;
     color: #fff;
     padding: 20px 0;
@@ -35,6 +51,7 @@ header {
 nav {
     text-align: center;
     margin-top: 20px;
+     ;
 }
 
 nav a {
@@ -80,6 +97,13 @@ footer {
 ul {
     list-style: none;
     padding: 0;
+}
+h1 {
+    color: #fff; /* Couleur du texte */
+    font-size: 36px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+    margin-bottom: 20px; /* Marge en bas pour l'espace avec le contenu suivant */
 }
 
 ul li {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sportify - Accueil</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+        <div align="center" class="logo">
+            <h1 class="titre" align="center">Sportify :Consultation sportive</h1><br>
+            
+            <img  src="logoece.jpg" alt="Sportify :Consultation sportive" class="logopetit">
+
+        </div>
+        
+    </header>
+
+    <main>
+        <!-- Ajoutez les autres sections ici -->
+
+        <section id="Votre compte">
+            <h2>Votre compte</h2>
+            <!-- Contenu spécifique pour le type de compte (client, coach, administrateur) -->
+            <div id="info-compte">
+                <!-- Les informations du compte seront affichées ici -->
+            </div>
+        </section>
+    </main>
+    <nav>
+        
+                <a href="sportify.html" class="active" id="Accueil">Retour au page principal</a>
+                
+            
+        </nav>
+
+     <footer>
+        <div class="contact">
+            <h3>Contactez-nous</h3>
+            <p>Vous avez des questions, des suggestions ou des réclamations ? N'hésitez pas à nous contacter par mail, par téléphone ou par courrier. Nous vous répondrons dans les meilleurs délais.</p>
+            <ul>
+                <li><a href="mailto:sportify@omnes.edu">sportify@omnes.edu</a></li>
+                <li><a href="tel:+33123456789">01 23 45 67 89</a></li>
+                <li>12 rue du Sport, 75015 Paris</li>
+            </ul>
+        </div>
+        <div class="map">
+            <h3>Trouvez-nous</h3>
+            
+    </footer>
+
+    <!-- Ajoutez le script JavaScript pour gérer les informations du compte -->
+    <script>
+        // Exemple : Supposons que le type de compte soit récupéré depuis le serveur ou stocké localement
+        var typeCompte = "client"; // Vous pouvez changer cela en "coach" ou "administrateur" pour simuler d'autres types de compte
+
+        // Fonction pour charger les informations du compte en fonction du type
+        function chargerInfoCompte() {
+            var infoCompte = document.getElementById('info-compte');
+            switch (typeCompte) {
+                case "client":
+                    infoCompte.innerHTML = "<p>Informations du compte client</p>";
+                    break;
+                case "coach":
+                    infoCompte.innerHTML = "<p>Informations du compte coach</p>";
+                    break;
+                case "administrateur":
+                    infoCompte.innerHTML = "<p>Informations du compte administrateur</p>";
+                    break;
+                default:
+                    infoCompte.innerHTML = "<p>Type de compte inconnu</p>";
+            }
+        }
+
+        // Appel de la fonction lors du chargement de la page
+        window.onload = chargerInfoCompte;
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sportify - Accueil</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header>
+       <div align="center" class="logo">
+            <h1 class="titre" align="center">Sportify :Consultation sportive</h1><br>
+            
+            <img  src="logoece.jpg" alt="Sportify :Consultation sportive" class="logopetit">
+
+        </div>
+        
+    </header>
+
+    <main>
+        <!-- Ajoutez les autres sections ici -->
+
+        <section id="RDV">
+            <h2>Rendez-vous</h2>
+            <!-- Affichez ici les rendez-vous confirmés pour l'utilisateur -->
+            
+            <!-- Exemple d'un rendez-vous avec le coach Guy DUMAIS -->
+            <div class="rendez-vous-item">
+                <h3>Rendez-vous avec Guy DUMAIS</h3>
+                <p>Date et heure : [Date et heure du RDV]</p>
+                <p>Adresse : [Adresse du RDV]</p>
+                <p>Document demandé : [Nom du document]</p>
+                <p>Digicode : [Code d'entrée]</p>
+                <button onclick="annulerRendezVous('Guy DUMAIS')">Annulation de RDV</button>
+            </div>
+        </section>
+    </main>
+     <nav>
+        
+                <a href="sportify.html" class="active" id="Accueil">Retour au page principal</a>
+                
+            
+        </nav>
+
+    <footer>
+        <div class="contact">
+            <h3>Contactez-nous</h3>
+            <p>Vous avez des questions, des suggestions ou des réclamations ? N'hésitez pas à nous contacter par mail, par téléphone ou par courrier. Nous vous répondrons dans les meilleurs délais.</p>
+            <ul>
+                <li><a href="mailto:sportify@omnes.edu">sportify@omnes.edu</a></li>
+                <li><a href="tel:+33123456789">01 23 45 67 89</a></li>
+                <li>12 rue du Sport, 75015 Paris</li>
+            </ul>
+        </div>
+        <div class="map">
+            <h3>Trouvez-nous</h3>
+            
+    </footer>
+
+    <!-- Ajoutez le script JavaScript pour gérer l'annulation du RDV -->
+    <script>
+        function annulerRendezVous(coach) {
+            // Ajoutez ici la logique d'annulation du RDV
+            // Vous pouvez mettre à jour la page ou envoyer une requête au serveur
+            // pour libérer le créneau du rendez-vous
+            alert("Le rendez-vous avec " + coach + " a été annulé.");
+        }
+    </script>
+</body>
+</html>
+
+
