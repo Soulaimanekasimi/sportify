@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sportify - Activités Sportives</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+
+    <main>
+        <section id="activites-sportives">
+            <h2>Activités Sportives</h2>
+            <!-- Sample activity -->
+            <div class="activity" id="musculation">
+                <h2>Musculation</h2>
+                <!-- Coach details -->
+                <div class="coach-details">
+                    <img src="coach-musculation.jpg" alt="Coach Louis Fay">
+                    <p>Nom du coach: Louis Fay</p>
+                    <p><b>ID du coach:1</b></p>
+                    <p>Coordonnées: Bureau XYZ, Tél: 123-456-789, Email: louis.fay@sportify.com</p>
+                    <!-- Coach availability as a table -->
+                    <table align="center" class="availability-table">
+                        <tr>
+                            <th>Jour</th>
+                            <th>Disponibilité</th>
+                        </tr>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>Matin</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>Absent</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>Toute la journée</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>Absent</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>Matin, Après-midi</td>
+                        </tr>
+                        <tr>
+                            <td>Samedi</td>
+                            <td>Absent</td>
+                        </tr>
+                        <tr>
+                            <td>Dimanche</td>
+                            <td>Toute la journée</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Communication options -->
+                <div class="communication-options">
+                  /////////// zid hna <input type='text' name="coachId">ID du Coach:</label><br>
+<input type='text' name="selectedday">le jour:</label><br>
+                    <button type="submit">Prendre un RDV</button>//////////////
+                    <button onclick="makeAudioCall('Louis Fay')">Communiquer avec le coach</button>
+                    <button onclick="makeVideoCall('Louis Fay')">Voir son CV</button>
+                </div>
+                
+            </div>
+            <!-- More activities can be added similarly -->
+        </section>
+    </main>
+     <nav>
+        
+                <a href="sportify.html" class="active" id="Accueil">Retour au page principal</a>
+                
+            
+        </nav>
+
+     <footer>
+        <div class="contact">
+            <h3>Contactez-nous</h3>
+            <p>Vous avez des questions, des suggestions ou des réclamations ? N'hésitez pas à nous contacter par mail, par téléphone ou par courrier. Nous vous répondrons dans les meilleurs délais.</p>
+            <ul>
+                <li><a href="mailto:sportify@omnes.edu">sportify@omnes.edu</a></li>
+                <li><a href="tel:+33123456789">01 23 45 67 89</a></li>
+                <li>12 rue du Sport, 75015 Paris</li>
+            </ul>
+        </div>
+        <div class="map">
+            <h3>Trouvez-nous</h3>
+        ////////////zid hna    <?php
+    include 'votre_script_php.php';
+     ?>/////////////////
+    </footer>
+
+    
+
+
+</body>
+</html>

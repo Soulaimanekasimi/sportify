@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sportify - Accueil</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<main>
+    <section id="Recherche">
+        <form id="form-recherche">
+            <label for="query">Recherche :</label>
+            <input type="text" id="query" name="query" placeholder="Entrez votre recherche">
+            <button type="button" onclick="effectuerRecherche()">Rechercher</button>
+        </form>
+
+        <!-- Affichez ici les résultats de la recherche -->
+        <div id="resultats-recherche">
+            <!-- Les résultats seront affichés ici dynamiquement -->
+        </div>
+    </section>
+</main>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<nav>
+    <a href="sportify.html" class="active" id="Accueil">Retour au page principal</a>
+</nav>
+
+<footer>
+    <div class="contact">
+        <h3>Contactez-nous</h3>
+        <p>Vous avez des questions, des suggestions ou des réclamations ? N'hésitez pas à nous contacter par mail, par téléphone ou par courrier. Nous vous répondrons dans les meilleurs délais.</p>
+        <ul>
+            <li><a href="mailto:sportify@omnes.edu">sportify@omnes.edu</a></li>
+            <li><a href="tel:+33123456789">01 23 45 67 89</a></li>
+            <li>12 rue du Sport, 75015 Paris</li>
+        </ul>
+    </div>
+    <div class="map">
+        <h3>Trouvez-nous</h3>
+    </div>
+</footer>
+
+<script>
+    // Votre base de données de liens
+    const linksDatabase = {
+        "page1": "https://www.example.com/page1",
+        "page2": "https://www.example.com/page2",
+        // Ajoutez autant de liens que nécessaire
+    };
+
+    function effectuerRecherche() {
+        // Récupérer la valeur de la recherche
+        var query = document.getElementById('query').value.toLowerCase();
+
+        // Rechercher dans la base de données
+        if (linksDatabase.hasOwnProperty(query)) {
+            // Rediriger vers la page correspondante
+            window.location.href = linksDatabase[query];
+        } else {
+            // Si aucune correspondance, afficher un message ou prendre une autre action
+            var resultatsRecherche = document.getElementById('resultats-recherche');
+            resultatsRecherche.innerHTML = "<p>Aucun résultat trouvé pour : " + query + "</p>";
+        }
+    }
+</script>
+</body>
+</html>
